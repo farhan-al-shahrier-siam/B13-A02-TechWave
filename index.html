@@ -12,22 +12,82 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body class="inter-font">
-    <header class="bg-[#1A0B2E]">
+  <body class="inter-font bg-[#1A0B2E]">
+    <header class="border-b border-gray-500">
       <nav
         class="flex max-w-7xl m-auto justify-around items-center text-white pt-8 pb-8"
       >
-        <div class="logo">Tech<span>Wave</span></div>
-        <div class="">
+        <div class="logo"><img class="max-w-52" src="./assets/logo.png" alt=""></div>
+        <div class="hidden md:block">
           <ul class="flex gap-8">
             <li><a href="">About</a></li>
             <li><a href="">Episodes</a></li>
             <li><a href="">Host</a></li>
           </ul>
         </div>
-        <button class="btn">Subscribe</button>
+        <button class="cursor-pointer hidden md:block bg-linear-to-bl from-purple-700 to-orange-400 px-4 py-3 rounded-4xl">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+        <div class="hamberger md:hidden"><img src="./assets/hamburger-menu.png" alt=""></div>
       </nav>
     </header>
+    <main>
+      <!-- banner/ hero section -->
+      <section class="mt-10 banner bg-[url(./assets/hero-bg.png)] bg-size-[100%] md:bg-cover md:bg-center bg-no-repeat">
+        <div class="banner-image ">
+          <div>
+            <button class="animate-pulse text-white left-72 relative md:left-[58%] md:top-[125px] z-10 bg-[#00FF88] px-4 py-2 rounded-4xl">NEW</button>
+            <img class="relative w-48 h-48 left-36 -top-10 md:h-[350px] md:w-[350px] md:left-[38%] md:top-16" src="./assets/hero-circle.png" alt="">
+            <img class="relative w-12 left-[215px] -top-[180px] md:w-[120px] md:left-[46%] md:top-[-200px]" src="./assets/microphone.png" alt="">
+          </div>
+        </div>
+        <div class="banner-content text-white w-[400px] md:w-[34%] md:m-w-[550px] m-auto text-center">
+          <h1 class="font-extrabold text-4xl md:text-6xl">TechWave</h1>
+          <p class="font-normal text-sm">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+          <div class="btn-group flex gap-2 justify-center items-center">
+            <div class="">
+              <button class="mt-6 mb-24 bg-linear-to-bl from-purple-700 to-orange-400 px-4 py-3 rounded-4xl"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+            </div>
+            <div class="">
+              <button class="mt-6 mb-24 border border-green-600 rounded-4xl px-4 py-3 text-green-600"><i class="fa-regular fa-envelope"></i> Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section>
+        <div class="about-container text-white">
+          <div class="about-content text-center">
+            <h1 class="font-bold text-3xl mb-4">About the Podcast</h1>
+            <p class=" md:mb-2">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.</p>
+            <p class="md:mb-2 ">We break down complex topics into digestible insights, explore productivity strategies that actually work,</p>
+            <p class="md:mb-4">and share stories of personal growth from industry leaders.</p>
+            <p class="md:mb-2">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+          </div>
+          <div class="ratings max-w-7xl w-[75%] m-auto">
+            <div class="cards grid grid-cols-2 md:grid-cols-4  text-center mt-5 ">
+              <div class="cards-info my-5">
+                <h1 class="font-black text-4xl text-green-600">150K+</h1>
+                <p>Monthly Listeners</p>
+              </div>
+              <div class="cards-info my-5">
+                <h1 class="font-black text-4xl text-green-600">200+</h1>
+                <p>Episodes Published</p>
+              </div>
+              <div class="cards-info my-5">
+                <h1 class="font-black text-4xl text-green-600">4.9★</h1>
+                <p>Average Rating</p>
+              </div>
+              <div class="cards-info my-5">
+                <h1 class="font-black text-4xl text-green-600">50+</h1>
+                <p>Industry Experts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
   </body>
 </html>
